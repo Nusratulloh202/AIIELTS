@@ -1,4 +1,5 @@
-﻿using AIIELTS.Enums;
+﻿using System.Text.Json.Serialization;
+using AIIELTS.Enums;
 
 namespace AIIELTS.Models
 {
@@ -11,5 +12,10 @@ namespace AIIELTS.Models
         public Gender Gender { get; set; }
         public string Profession { get; set; }
 
+
+        [JsonIgnore]
+        public ICollection<Essay> Essays { get; set; }
     }
+
 }
+

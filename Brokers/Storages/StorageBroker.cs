@@ -33,8 +33,9 @@ namespace AIIELTS.Brokers.Storages
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //AddEssayConfigurations(modelBuilder);
-        /*    AddFeedbackConfigurations(modelBuilder);*/
+
+            AddEssayConfigurations(modelBuilder);
+            AddFeedbackConfigurations(modelBuilder);
         }
 
         public override void Dispose() { }
